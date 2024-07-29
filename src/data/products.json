@@ -1,0 +1,52 @@
+[
+  {
+    "id": 1,
+    "name": "Blue T-Shirt",
+    "image": "blue_tshirt.png"
+  },
+  {
+    "id": 2,
+    "name": "Red Hat",
+    "image": "red_hat.png"
+  },
+  {
+    "id": 3,
+    "name": "Green Shoes",
+    "image": "green_shoes.png"
+  },
+  {
+    "id": 4,
+    "name": "Yellow Jacket",
+    "image": "yellow_jacket.png"
+  },
+  {
+    "id": 5,
+    "name": "Black Jeans",
+    "image": "black_jeans.png"
+  },
+  {
+    "id": 6,
+    "name": "White Socks",
+    "image": "white_socks.png"
+  },
+  {
+    "id": 7,
+    "name": "Purple Scarf",
+    "image": "purple_scarf.png"
+  },
+  {
+    "id": 8,
+    "name": "Orange Gloves",
+    "image": "orange_gloves.png"
+  },
+  {
+    "id": 9,
+    "name": "Pink Sunglasses",
+    "image": "pink_sunglasses.png"
+  },
+  {
+    "id": 10,
+    "name": "Brown Belt",
+    "image": "brown_belt.png"
+  }
+]

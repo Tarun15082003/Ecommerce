@@ -1,0 +1,31 @@
+.product-container {
+  padding: 40px 40px 40px 40px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.product {
+  margin: 10vh 5vh 5px 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.product-btn {
+  padding: 10px 10px 10px 10px;
+  margin: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  color: var(--dark);
+  cursor: pointer;
+}
+
+.product-img {
+  margin: 10px 10px 10px 10px;
+  height: 30vh;
+  width: 30vh;
+  border: solid;
+}

@@ -1,0 +1,36 @@
+.form-heading {
+  margin-top: 0;
+  font-weight: 500px;
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.despcription {
+  margin-top: 0;
+  font-weight: 500px;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.form-input {
+  margin-top: 5px;
+  border-radius: 10px;
+  height: 3vh;
+  width: 100%;
+}
+
+.form-button {
+  margin-top: 5px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: var(--yellow);
+  color: var(--dark);
+  cursor: pointer;
+  width: 100%;
+}

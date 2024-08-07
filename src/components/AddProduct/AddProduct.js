@@ -1,13 +1,16 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import Modal from "../UI/Modal";
 import "./AddProduct.css";
+import AppContext from "../../store/app-context";
 
-function AddProduct({ showAddProductForm, closeAddProductForm, onAddProduct }) {
+function AddProduct() {
+  const { showAddProductForm, closeAddProductForm, handleAddProduct } =
+    useContext(AppContext);
   const [productName, setProductName] = useState("");
 
   function handleSubmit(event) {
     event.preventDefault();
-    onAddProduct(productName);
+    handleAddProduct(productName);
     setProductName("");
   }
 

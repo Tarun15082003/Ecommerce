@@ -1,6 +1,10 @@
+import AppContext from "../../store/app-context";
 import "./Header.css";
+import { useContext } from "react";
 
-export function Header({ openCart, openAddProductForm }) {
+export function Header() {
+  const { openCart, openAddProductForm } = useContext(AppContext);
+
   return (
     <div className="header">
       <h1 className="header-left">My React Store</h1>

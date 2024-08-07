@@ -1,6 +1,9 @@
+import { useContext } from "react";
 import "./Product.css";
+import AppContext from "../../store/app-context";
 
-function Product({ id, name, image, onAddToCart }) {
+function Product({ id, name, image }) {
+  const { handleAddToCart } = useContext(AppContext);
   return (
     <div key={id} className="product">
       <img
@@ -11,7 +14,7 @@ function Product({ id, name, image, onAddToCart }) {
       <div className="prduct-name">{name}</div>
       <button
         className="product-btn"
-        onClick={() => onAddToCart(id, name, image)}
+        onClick={() => handleAddToCart(id, name, image)}
       >
         Add to cart
       </button>
@@ -19,16 +22,12 @@ function Product({ id, name, image, onAddToCart }) {
   );
 }
 
-export function Products({ products, onAddToCart }) {
+export function Products() {
+  const { products } = useContext(AppContext);
   return (
     <div className="product-container">
       {products.map((product) => (
-        <Product
-          id={product.id}
-          name={product.name}
-          image={product.image}
-          onAddToCart={onAddToCart}
-        />
+        <Product id={product.id} name={product.name} image={product.image} />
       ))}
     </div>
   );
